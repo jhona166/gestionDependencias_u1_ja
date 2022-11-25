@@ -2,16 +2,16 @@ package com.example.demo.sistema.herencia;
 
 //import java.math.BigDecimal;
 
-public class CuentaAhorros extends Cuenta {
+public class CuentaAhorrosH extends CuentaH {
 	
 	private float porcentajeDescuento;
 
-	public CuentaAhorros() {
+	public CuentaAhorrosH() {
 		
 	}
 	
 	@Override
-	public void aperturaCuenta(Cliente cliente, float saldo) {
+	public void aperturaCuenta(ClienteH cliente, float saldo) {
 		super.aperturaCuenta(cliente,saldo);
 		super.interes=10/100.0f;
 		System.out.println("Cuenta de Ahorros creada con exito");

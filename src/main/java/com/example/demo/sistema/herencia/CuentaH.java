@@ -2,15 +2,15 @@ package com.example.demo.sistema.herencia;
 
 //import java.math.BigDecimal;
 
-public class Cuenta {
+public class CuentaH {
 
 	protected int numeroCuenta;
 	protected float saldo;
 	protected float interes;
-	protected Cliente cuentaHabiente;
+	protected ClienteH cuentaHabiente;
 	
 	
-	public void aperturaCuenta(Cliente cliente, float saldo) {
+	public void aperturaCuenta(ClienteH cliente, float saldo) {
 		System.out.println("aperturando cuenta para el cliente "+ cliente.getNombre()+" "+cliente.getApellido());
 		this.saldo=saldo;
 	}
@@ -22,10 +22,10 @@ public class Cuenta {
 		return "Cuenta [numeroCuenta=" + numeroCuenta + ", saldo=" + saldo + ", interes=" + interes
 				+ ", cuentaHabiente=" + cuentaHabiente + "]";
 	}
-	public Cliente getCuentaHabiente() {
+	public ClienteH getCuentaHabiente() {
 		return cuentaHabiente;
 	}
-	public void setCuentaHabiente(Cliente cuentaHabiente) {
+	public void setCuentaHabiente(ClienteH cuentaHabiente) {
 		this.cuentaHabiente = cuentaHabiente;
 	}
 	public int getNumeroCuenta() {

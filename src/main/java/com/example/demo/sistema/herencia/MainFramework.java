@@ -7,8 +7,8 @@ public class MainFramework {
 	public static void main(String[] args) {
 		Scanner in=new Scanner(System.in);
 		Scanner num=new Scanner(System.in);
-		Cliente cliente=new Cliente();
-		Cuenta cuenta;
+		ClienteH cliente=new ClienteH();
+		CuentaH cuenta;
 		
 		System.out.println("***********Bienvenido al BANCO PICHINCHA ************");
 		System.out.println("Ingrese el nombre del cliente");
@@ -29,11 +29,11 @@ public class MainFramework {
 		
 	}
 	
-	static public Cuenta crearCuenta(Cliente cliente,int opcion) {
+	static public CuentaH crearCuenta(ClienteH cliente,int opcion) {
 		Scanner in=new Scanner(System.in);
 		switch (opcion) {
 		case 1:
-			CuentaAhorros cuentaA=new CuentaAhorros();
+			CuentaAhorrosH cuentaA=new CuentaAhorrosH();
 			cuentaA.setCuentaHabiente(cliente);
 			System.out.println("Ingrese el numero de cuenta");
 			cuentaA.setNumeroCuenta(in.nextInt());
@@ -47,7 +47,7 @@ public class MainFramework {
 			return cuentaA;
 		case 2:
 			float saldo=0.0f;
-			CuentaCorriente cuentaC=new CuentaCorriente();
+			CuentaCorrienteH cuentaC=new CuentaCorrienteH();
 			cuentaC.setCuentaHabiente(cliente);
 			System.out.println("Ingrese el numero de cuenta");
 			cuentaC.setNumeroCuenta(in.nextInt());
@@ -66,7 +66,7 @@ public class MainFramework {
 			cuentaC.aperturaCuenta(cliente, cuentaC.getSaldo());
 			return cuentaC;
 		case 3:
-			CuentaPoliza cuentaP=new CuentaPoliza();
+			CuentaPolizaH cuentaP=new CuentaPolizaH();
 			cuentaP.setCuentaHabiente(cliente);
 			System.out.println("Ingrese el numero de cuenta");
 			cuentaP.setNumeroCuenta(in.nextInt());
@@ -86,7 +86,7 @@ public class MainFramework {
 			cuentaP.aperturaCuenta(cliente, cuentaP.getSaldo());
 			return cuentaP;
 		default:
-			Cuenta cuenta=new Cuenta();
+			CuentaH cuenta=new CuentaH();
 			return cuenta;
 		}
 	}

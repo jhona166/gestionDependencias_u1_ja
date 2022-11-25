@@ -10,9 +10,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.example.demo.Spring.boot.ClienteSB;
 import com.example.demo.Spring.boot.CuentaAhorrosSB;
-import com.example.demo.sistema.herencia.Cliente;
-import com.example.demo.sistema.herencia.Cuenta;
-import com.example.demo.sistema.herencia.CuentaAhorros;
+import com.example.demo.sistema.herencia.ClienteH;
+import com.example.demo.sistema.herencia.CuentaH;
+import com.example.demo.sistema.herencia.CuentaAhorrosH;
 
 @SpringBootApplication
 public class ProyectoU1JpDependenciasTarea1Application implements CommandLineRunner {
