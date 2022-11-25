@@ -1,11 +1,11 @@
 package com.example.demo.Spring.boot;
 import java.util.Date;
-public class CuentaPolizaSB extends CuentaSB {
+public class CuentaPolizaSBt extends CuentaSBt {
 	
 	private Date fechaVigencia;
 
 	@Override
-	public void aperturaCuenta(ClienteSB cliente, float saldo) {
+	public void aperturaCuenta(ClienteSBt cliente, float saldo) {
 		super.aperturaCuenta(cliente,saldo);
 		super.interes=10/100.0f;
 		System.out.println("Poliza creada con exito");

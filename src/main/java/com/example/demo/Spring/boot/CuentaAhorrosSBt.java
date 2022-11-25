@@ -5,16 +5,16 @@ import org.springframework.stereotype.Component;
 //import java.math.BigDecimal;
 
 @Component
-public class CuentaAhorrosSB extends CuentaSB {
+public class CuentaAhorrosSBt extends CuentaSBt {
 	
 	private float porcentajeDescuento;
 
-	public CuentaAhorrosSB() {
+	public CuentaAhorrosSBt() {
 		
 	}
 	
 	@Override
-	public void aperturaCuenta(ClienteSB cliente, float saldo) {
+	public void aperturaCuenta(ClienteSBt cliente, float saldo) {
 		super.aperturaCuenta(cliente,saldo);
 		super.interes=10/100.0f;
 		System.out.println("Cuenta de Ahorros creada con exito");

@@ -4,15 +4,15 @@ import org.springframework.stereotype.Service;
 
 //import java.math.BigDecimal;
 @Service
-public class CuentaSB {
+public class CuentaSBt {
 
 	protected int numeroCuenta;
 	protected float saldo;
 	protected float interes;
-	protected ClienteSB cuentaHabiente;
+	protected ClienteSBt cuentaHabiente;
 	
 	
-	public void aperturaCuenta(ClienteSB cliente, float saldo) {
+	public void aperturaCuenta(ClienteSBt cliente, float saldo) {
 		System.out.println("aperturando cuenta para el cliente "+ cliente.getNombre()+" "+cliente.getApellido());
 		this.saldo=saldo;
 	}
@@ -24,10 +24,10 @@ public class CuentaSB {
 		return "Cuenta [numeroCuenta=" + numeroCuenta + ", saldo=" + saldo + ", interes=" + interes
 				+ ", cuentaHabiente=" + cuentaHabiente + "]";
 	}
-	public ClienteSB getCuentaHabiente() {
+	public ClienteSBt getCuentaHabiente() {
 		return cuentaHabiente;
 	}
-	public void setCuentaHabiente(ClienteSB cuentaHabiente) {
+	public void setCuentaHabiente(ClienteSBt cuentaHabiente) {
 		this.cuentaHabiente = cuentaHabiente;
 	}
 	public int getNumeroCuenta() {

@@ -1,11 +1,11 @@
 package com.example.demo.Spring.boot;
 //import java.math.BigDecimal;
-public class CuentaCorrienteSB extends CuentaSB {
+public class CuentaCorrienteSBt extends CuentaSBt {
 
 	private float montoMinimo;
 
 	@Override
-	public void aperturaCuenta(ClienteSB cliente, float saldo) {
+	public void aperturaCuenta(ClienteSBt cliente, float saldo) {
 		super.aperturaCuenta(cliente,saldo);
 		super.interes=8/100.0f;
 		System.out.println("Cuenta de Corriente creada con exito");

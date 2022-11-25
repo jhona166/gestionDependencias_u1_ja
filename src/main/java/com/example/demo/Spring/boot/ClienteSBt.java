@@ -3,7 +3,7 @@ package com.example.demo.Spring.boot;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ClienteSB {
+public class ClienteSBt {
 
 	private String nombre;
 	private String apellido;

@@ -8,8 +8,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.example.demo.Spring.boot.ClienteSB;
-import com.example.demo.Spring.boot.CuentaAhorrosSB;
+import com.example.demo.Spring.boot.ClienteSBt;
+import com.example.demo.Spring.boot.CuentaAhorrosSBt;
 import com.example.demo.sistema.herencia.ClienteH;
 import com.example.demo.sistema.herencia.CuentaH;
 import com.example.demo.sistema.herencia.CuentaAhorrosH;
@@ -19,9 +19,9 @@ public class ProyectoU1JpDependenciasTarea1Application implements CommandLineRun
 
 	@Autowired
 	//private PacienteTerceraEdadSB pacienteTE;
-	private ClienteSB cliente;
+	private ClienteSBt cliente;
 	@Autowired
-	private CuentaAhorrosSB cuenta;
+	private CuentaAhorrosSBt cuenta;
 	//@Autowired
 	//private MedicoSB medicoSB;
 	public static void main(String[] args) {
