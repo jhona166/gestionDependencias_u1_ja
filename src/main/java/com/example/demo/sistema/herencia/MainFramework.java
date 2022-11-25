@@ -1,8 +1,8 @@
-package com.example.demo.sistema;
+package com.example.demo.sistema.herencia;
 import java.util.Date;
 import java.util.Scanner;
 
-public class Main {
+public class MainFramework {
 	
 	public static void main(String[] args) {
 		Scanner in=new Scanner(System.in);

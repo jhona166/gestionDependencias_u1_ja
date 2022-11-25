@@ -1,4 +1,4 @@
-package com.example.demo.sistema;
+package com.example.demo.tradicional;
 //import java.math.BigDecimal;
 public class CuentaCorriente extends Cuenta {
 

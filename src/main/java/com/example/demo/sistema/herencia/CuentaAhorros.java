@@ -1,4 +1,4 @@
-package com.example.demo.sistema;
+package com.example.demo.sistema.herencia;
 
 //import java.math.BigDecimal;
 
